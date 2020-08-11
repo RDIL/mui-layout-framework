@@ -14,22 +14,20 @@ interface Props {
     toolbarProps?: ToolbarProps
 }
 
-type ElementList = React.ReactElement[]
-
 const useStyles = makeStyles(() => ({
-    root: {
-        flexGrow: 1,
-    },
-    pushRight: {
+    grow: {
         flexGrow: 1,
     },
 }))
 
+/**
+ * A page header.
+ */
 const Header = (props: Props) => {
     const classes = useStyles()
 
-    let startItems: ElementList = []
-    let endItems: ElementList = []
+    const startItems: React.ReactElement[] = []
+    const endItems: React.ReactElement[] = []
 
     props.elements.forEach((element) => {
         if (element.edge === "end") {
@@ -40,12 +38,12 @@ const Header = (props: Props) => {
     })
 
     return (
-        <header className={classes.root}>
+        <header className={classes.grow}>
             <AppBar {...props.appBarProps}>
                 <Toolbar {...props.toolbarProps}>
                     <div className="start-items">
                         {startItems}
-                        <div className={classes.pushRight} />
+                        <div className={classes.grow} />
                     </div>
                     <div className="flex-end-items">{endItems}</div>
                 </Toolbar>

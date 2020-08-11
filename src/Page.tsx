@@ -9,6 +9,9 @@ interface Props {
     scripts?: string[]
 }
 
+/**
+ * The component for a typical page.
+ */
 const Page = (props: Props) => {
     return (
         <div>
