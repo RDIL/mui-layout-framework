@@ -1,11 +1,11 @@
 import * as React from "react"
 import Grid from "@material-ui/core/Grid"
 
-interface Props {
+export interface CenteredProps {
     children: React.ReactElement
 }
 
-const Centered = (props: Props) => {
+const Centered = (props: CenteredProps) => {
     return (
         <Grid container justify="center">
             {props.children}

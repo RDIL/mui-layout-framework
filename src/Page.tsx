@@ -1,9 +1,9 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
 
-interface Props {
+export interface PageProps {
     title: string
-    content: React.ReactElement
+    children: React.ReactElement
     header?: React.ReactElement
     footer?: React.ReactElement
     scripts?: string[]
@@ -12,19 +12,19 @@ interface Props {
 /**
  * The component for a typical page.
  */
-const Page = (props: Props) => {
+const Page = (props: PageProps) => {
     return (
         <div>
             <Helmet>
                 <title>{props.title}</title>
-                {props.scripts && props.scripts.length >= 1
+                {props.scripts && props.scripts.length > 0
                     ? props.scripts.map((url) => (
                           <script defer src={url} key={url} />
                       ))
                     : null}
             </Helmet>
             {props.header || null}
-            <main>{props.content}</main>
+            <main>{props.children}</main>
             {props.footer || null}
         </div>
     )

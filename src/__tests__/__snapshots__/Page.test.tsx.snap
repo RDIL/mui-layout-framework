@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page component can render a basic page 1`] = `"<div data-reactroot=\\"\\"><main><div class=\\"MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center\\"><h2 class=\\"MuiTypography-root MuiTypography-h2\\">Tim&#x27;s Animal Rescue</h2></div></main></div>"`;
+
+exports[`Page component can render a page a header and footer 1`] = `"<div data-reactroot=\\"\\"><header class=\\"MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4\\"><div class=\\"MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters\\"><h2 class=\\"MuiTypography-root MuiTypography-h2\\">My Navbar</h2></div></header><main><div class=\\"MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center\\"><h2 class=\\"MuiTypography-root MuiTypography-h2\\">Tim&#x27;s Animal Rescue</h2></div></main><div><p class=\\"MuiTypography-root MuiTypography-body1\\">some footer</p></div></div>"`;
+
+exports[`Page component can render a page with scripts 1`] = `"<div data-reactroot=\\"\\"><main><div class=\\"MuiGrid-root MuiGrid-container MuiGrid-justify-xs-center\\"><h2 class=\\"MuiTypography-root MuiTypography-h2\\">Tim&#x27;s Animal Rescue</h2></div></main></div>"`;
