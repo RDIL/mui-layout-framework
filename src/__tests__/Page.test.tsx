@@ -59,11 +59,9 @@ describe("Page component", () => {
                     header={<Header />}
                     footer={<Footer />}
                 >
-                    <Centered>
-                        <Typography variant="h2">
-                            Tim's Animal Rescue
-                        </Typography>
-                    </Centered>
+                    <Typography>
+                        My cool content
+                    </Typography>
                 </Page>
             )
         ).toMatchSnapshot()
