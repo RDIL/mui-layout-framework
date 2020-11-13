@@ -59,9 +59,7 @@ describe("Page component", () => {
                     header={<Header />}
                     footer={<Footer />}
                 >
-                    <Typography>
-                        My cool content
-                    </Typography>
+                    <Typography>My cool content</Typography>
                 </Page>
             )
         ).toMatchSnapshot()
