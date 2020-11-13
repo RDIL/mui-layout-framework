@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet"
 
 export interface PageProps {
     title: string
-    children: React.ReactElement
+    children: React.ReactElement | React.ReactElement[]
     header?: React.ReactElement
     footer?: React.ReactElement
     scripts?: string[]

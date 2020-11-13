@@ -2,62 +2,43 @@ import React from "react"
 import "./page.css"
 import Page from "../Page"
 import { makeStyles } from "@material-ui/core/styles"
+import { AppBar, Toolbar, Typography } from "@material-ui/core"
 
 export const StoryPageMain = () => (
-    <Page title={"My Page"}>
-        <article>
-            <section>
-                <h2>Pages in Storybook</h2>
-                <p>
-                    We recommend building UIs with a{" "}
-                    <a
-                        href="https://componentdriven.org"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <strong>component-driven</strong>
-                    </a>{" "}
-                    process starting with atomic components and ending with
-                    pages.
-                </p>
-                <p>
-                    Get a guided tutorial on component-driven development at{" "}
-                    <a
-                        href="https://www.learnstorybook.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Learn Storybook
-                    </a>
-                    . Read more in the{" "}
-                    <a
-                        href="https://storybook.js.org/docs"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        docs
-                    </a>
-                    .
-                </p>
-            </section>
-        </article>
+    <Page title={"Storybook Example Content Page"}>
+        <h2>Pages in Storybook</h2>
+        <p>
+            This is a page. It is essentially a wrapper for your content.
+        </p>
+        <p>
+            Just put whatever you want in here.
+        </p>
     </Page>
 )
 
 const useStructuredPageStyles = makeStyles(() => ({
     flex: {
-        flexGrow: 1
-    }
+        flexGrow: 1,
+    },
 }))
 
 export const StructuredMuiPage = () => {
     const styles = useStructuredPageStyles()
 
     return (
-        <Page title={"Timmmy's Animal Rescue"}>
-            <section>
-
-            </section>
+        <Page
+            title={"Timmmy's Animal Rescue"}
+            header={
+                <AppBar>
+                    <Toolbar className={styles.flex}>
+                        <Typography variant="h6">Timmy's Animal Rescue</Typography>
+                    </Toolbar>
+                </AppBar>
+            }
+        >
+            <p>
+                This page uses a header and footer, built off Material-UI!
+            </p>
         </Page>
     )
 }
