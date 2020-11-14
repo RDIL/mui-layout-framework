@@ -23,9 +23,13 @@ const Page = (props: PageProps) => {
                       ))
                     : null}
             </Helmet>
-            {props.header || null}
+            <header>
+                {props.header || null}
+            </header>
             <main>{props.children}</main>
-            {props.footer || null}
+            <footer>
+                {props.footer || null}
+            </footer>
         </div>
     )
 }

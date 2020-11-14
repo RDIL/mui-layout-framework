@@ -9,4 +9,6 @@ export default {
 } as Meta
 
 export const SimplePage = ((() => <StoryPageMain />) as Story).bind({})
-export const StructuredMUIPage = ((() => <StructuredMuiPage />) as Story).bind({})
+export const StructuredMUIPage = ((() => <StructuredMuiPage />) as Story).bind(
+    {}
+)
