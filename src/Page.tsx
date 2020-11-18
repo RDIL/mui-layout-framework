@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Helmet } from "react-helmet"
 
 export interface PageProps {
     title: string
@@ -13,6 +12,8 @@ export interface PageProps {
  * The component for a typical page.
  */
 const Page = (props: PageProps) => {
+    const { Helmet } = require("react-helmet")
+
     return (
         <div>
             <Helmet>
