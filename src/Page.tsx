@@ -5,7 +5,6 @@ export interface PageProps {
     children: React.ReactElement | React.ReactElement[]
     header?: React.ReactElement
     footer?: React.ReactElement
-    scripts?: string[]
 }
 
 /**
@@ -18,19 +17,10 @@ const Page = (props: PageProps) => {
         <div>
             <Helmet>
                 <title>{props.title}</title>
-                {props.scripts && props.scripts.length > 0
-                    ? props.scripts.map((url) => (
-                          <script defer src={url} key={url} />
-                      ))
-                    : null}
             </Helmet>
-            <header>
-                {props.header || null}
-            </header>
+            <header>{props.header || null}</header>
             <main>{props.children}</main>
-            <footer>
-                {props.footer || null}
-            </footer>
+            <footer>{props.footer || null}</footer>
         </div>
     )
 }

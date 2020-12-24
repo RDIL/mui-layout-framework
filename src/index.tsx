@@ -1,4 +1,4 @@
 import Page from "./Page"
-import Centered from "./Centered"
+import Centered, { MuiV4Centered } from "./Centered"
 
-export { Page, Centered }
+export { Page, Centered, MuiV4Centered }

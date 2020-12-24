@@ -4,7 +4,6 @@ import Page from "../Page"
 import { makeStyles } from "@material-ui/core/styles"
 import {
     AppBar,
-    Divider,
     Toolbar,
     Typography,
     Table,
@@ -17,9 +16,8 @@ import {
 
 export const StoryPageMain = () => (
     <Page title={"Storybook Example Content Page"}>
-        <h2>Pages in Storybook</h2>
+        <h2>Pages</h2>
         <p>This is a page. It is essentially a wrapper for your content.</p>
-        <p>Just put whatever you want in here.</p>
     </Page>
 )
 
@@ -45,7 +43,7 @@ export const StructuredMuiPage = () => {
                 <AppBar>
                     <Toolbar className={classes.flex}>
                         <Typography variant="h6">
-                            Timmy's Animal Rescue
+                            Timmy&apos;s Animal Rescue
                         </Typography>
                     </Toolbar>
                 </AppBar>
@@ -76,12 +74,11 @@ export const StructuredMuiPage = () => {
                 with a header and footer.
             </p>
             <div>
-                <Typography variant="h3">Timmy's Animal Rescue</Typography>
+                <Typography variant="h3">Timmy&apos;s Animal Rescue</Typography>
                 <Typography variant="subtitle1">
                     Providing dogs and cats with new homes since last week.
                 </Typography>
             </div>
-            <Divider />
             <div>
                 <Typography variant="h4">Adopt Now</Typography>
                 We have dogs and cats in need of your help, so call us whenever
